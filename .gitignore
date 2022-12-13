@@ -1,0 +1,5 @@
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+2022-01-01*
