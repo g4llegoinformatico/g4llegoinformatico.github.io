@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<ul>
+    {% for post in paginator.posts %}
+      <li>
+          <h1><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h1>
+          <h3>{{ post.tag | strip_html | truncatewords:50 }}</h3>
+      </li>
+    {% endfor %}
+</ul>
